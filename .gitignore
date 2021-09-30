@@ -7,6 +7,15 @@ bin-release/
 # Other files and folders
 .settings/
 
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+programs/cross2/target
+tests/node_modules
+tests/package-lock.json
+Cargo.lock
+
 # Executables
 *.swf
 *.air

@@ -1,0 +1,17 @@
+[package]
+name = "cross2"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "cross2"
+
+[features]
+no-entrypoint = []
+cpi = ["no-entrypoint"]
+
+[dependencies]
+anchor-lang = { path = "/home/unix/anchor1/anchor/lang" }
+cross1 = { path = "../cross1", features = ["cpi"] }
